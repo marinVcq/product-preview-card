@@ -45,7 +45,7 @@ The designs were created to the following widths:
 
 
 ### Links
-- Live Site URL: soon...
+- Live Site URL: https://marinvcq.github.io/product-preview-card/
 
 ### Built with
 
