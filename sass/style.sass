@@ -1,0 +1,100 @@
+@import base/_base.sass
+@import base/_mixins.sass
+
+.main-container
+	@include width-height(100%,100%)
+	@include flexbox(column,undefined, undefined)
+	max-width: 35rem
+	max-height: 61rem
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	border-radius: 1rem
+	background-color: $white
+
+.image-container
+	@include width-height(100%,40%)
+	background-image: url('../assets/images/image-product-mobile.jpg')
+	background-position: center
+	background-size: cover
+	border-radius: 1rem 1rem 0 0
+
+
+.text-container
+	@include width-height(100%,60%)
+	@include flexbox(column, undefined, undefined)
+	padding: 2rem 1.6rem 2.5rem 2rem
+
+h2 
+	text-transform: uppercase
+	font-weight: 500
+	color: $dark-grayish-blue
+	letter-spacing: 0.5rem
+	font-size: 1.4rem
+
+h1 
+	font-family: 'Fraunces'
+	font-size: 3rem
+	margin: 1.4rem 0 1.7rem
+	line-height: 3rem
+	color: $dark-blue
+
+p
+	font-size: 1.4rem
+	color: $dark-grayish-blue
+	line-height: 2.3rem
+
+.price-container
+	display: flex
+	font-family: "Fraunces"
+	width: 100%
+	margin: 4rem 0 1.8rem 0
+
+	#currentPrice
+		color: $dark-cyan
+		font-size: 3rem
+		margin-right: 2rem
+
+	#formerPrice
+		@include flexbox(row,undefined,center)
+		font-size: 1.7rem
+		color: $dark-grayish-blue
+		text-decoration: line-through
+		font-family: 'Monstserrat'
+
+.button
+	@include width-height(100%, 5rem)
+	@include flexbox(row,center,center)
+	color: white
+	background-color: $dark-cyan
+	font-size: 1.6rem
+	font-weight: 500
+	border-radius: 1rem
+
+	&:hover
+		background-color: $dark-cyan-activate
+
+#cartItem
+	margin-right: 1.5rem
+
+
+@include respond(desktop)
+	.main-container
+		flex-direction: row
+		max-width: 60rem
+		max-height: 43rem
+	
+	.image-container
+		@include width-height(50%, 100%)
+		background-image: url('../assets/images/image-product-desktop.jpg')
+		border-radius: 1rem 0 0 1rem
+	
+	.text-container
+		@include width-height(50%, 100%)
+		padding: 2.8rem 3rem 2.5rem 3rem
+	
+	.price-container
+		margin-top: 2.5rem
+		margin-bottom: 2.5rem
+	
