@@ -9,25 +9,26 @@
   margin: 0; }
 
 html {
+  width: 100vw;
+  height: 100vh;
   position: relative;
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
   font-size: 62.5%; }
 
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat";
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: #f2ebe3;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  background-color: #f2ebe3; }
 
 a {
   cursor: pointer;
@@ -42,10 +43,6 @@ a {
   align-items: undefined;
   max-width: 35rem;
   max-height: 61rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 1rem;
   background-color: white; }
 
